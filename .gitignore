@@ -1,0 +1,7 @@
+# Ignore backend build files
+backend/bin/
+backend/obj/
+
+# Ignore Flutter build files
+frontend/build/
+frontend/.dart_tool/

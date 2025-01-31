@@ -278,8 +278,56 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       sleepQuality: _sleepQualityController.text,
     );
 
-    // Print the data in JSON format
-    String jsonData = jsonEncode(person.toJson());
-    print(jsonData);
+    // Prepare the prompt as a string
+    String workoutPrompt = '''
+Create a personalized workout plan based on the following user data:
+
+**Name:** ${person.name}  
+**Age:** ${person.age}  
+**Gender:** ${person.gender}  
+**Height:** ${person.height} cm  
+**Weight:** ${person.weight} kg  
+**Body Fat Percentage:** ${person.bodyFatPercentage ?? 'N/A'} %  
+**Fitness Level:** ${person.fitnessLevel} (Beginner, Intermediate, Advanced)  
+**Goal:** ${person.goal} (Weight Loss, Muscle Gain, Endurance, General Fitness)  
+**Workout Days Per Week:** ${person.workoutDaysPerWeek}  
+**Preferred Workout Type:** ${person.preferredWorkoutType} (Cardio, Strength, HIIT, Yoga, Mixed)  
+**Available Equipment:** ${person.availableEquipment.isNotEmpty ? person.availableEquipment.join(', ') : 'None'}  
+**Activity Level:** ${person.activityLevel} (Sedentary, Lightly Active, Active, Very Active)  
+**Health Conditions:** ${person.healthConditions.isNotEmpty ? person.healthConditions.join(', ') : 'None'}  
+**Past Injuries:** ${person.pastInjuries!.isNotEmpty ? person.pastInjuries?.join(', ') : 'None'}  
+**Dietary Preference:** ${person.dietaryPreference} (Vegan, Vegetarian, Standard, Keto, etc.)  
+**Workout Experience:** ${person.workoutExperience!.isNotEmpty ? person.workoutExperience?.join(', ') : 'None'} (Types of training they have done before)  
+**Available Workout Times:** ${person.availableWorkoutTimes.isNotEmpty ? person.availableWorkoutTimes.join(', ') : 'None'} (e.g., Morning, Evening)  
+**Motivation Level:** ${person.motivationLevel} (Low, Moderate, High)  
+**Average Daily Steps:** ${person.averageDailySteps}  
+**Preferred Workout Duration:** ${person.workoutDurationMinutes} minutes  
+**Stress Level:** ${person.stressLevel} (Low, Moderate, High)  
+**Sleep Quality:** ${person.sleepQuality} (Poor, Average, Good)  
+
+** **Workout Plan Requirements**
+1. **Structured Weekly Plan** (Days, Exercises, Sets, Reps, Duration).
+2. **Warm-up & Cool-down recommendations**.
+3. **Rest periods & recovery tips**.
+4. **Exercise modifications** (if injuries or health conditions exist).
+5. **Custom workout difficulty** based on motivation, sleep, and stress levels.
+
+Ensure the plan is **realistic, progressive, and customized** to maximize user results.
+
+** Expected Workout Model Response:
+
+Workout {
+  final String mainTitle;
+  final String wodTitle;
+  final String wodType;
+  final String wodTime;
+  final List<Movement> movements;
+  final int likes;
+  final int comments;
+  final bool isMarkedAsDone;
+  final String imageUrl;
+}
+''';
+    print(workoutPrompt);
   }
 }

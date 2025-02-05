@@ -5,3 +5,4 @@ backend/obj/
 # Ignore Flutter build files
 frontend/build/
 frontend/.dart_tool/
+/backend/.vs/backend/FileContentIndex

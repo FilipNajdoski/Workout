@@ -4,7 +4,9 @@ namespace backend.Core.Interfaces
 {
     public interface IUserRepository
     {
-        Task<User> GetUserByUsernameAsync(string username);
-        Task AddUserAsync(User user);
+        Task<Users> GetUserByUsernameAsync(string username);
+        Task AddUserAsync(Users user);
+        Task SavePreferencesAsync(UserPreferences preferences);
+        Task<Users> GetUserByIdAsync(int userId);
     }
 }

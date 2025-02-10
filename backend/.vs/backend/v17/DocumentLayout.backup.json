@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +15,14 @@
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\infrastructure\\configurations\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:infrastructure\\configurations\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,8 +31,16 @@
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,21 +57,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 546,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-04T14:28:49.707Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -79,98 +82,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserPreferences.cs",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\UserPreferences.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\UserPreferences.cs",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\UserPreferences.cs",
+              "RelativeToolTip": "Core\\Entities\\UserPreferences.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAIA9wFIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:20:44.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T13:15:08.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthControler.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\API\\Controlers\\AuthControler.cs",
               "RelativeDocumentMoniker": "API\\Controlers\\AuthControler.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\API\\Controlers\\AuthControler.cs",
               "RelativeToolTip": "API\\Controlers\\AuthControler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T13:46:47.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
-              "RelativeToolTip": "Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T13:45:34.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T11:34:57.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "backend",
-              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\backend.csproj",
-              "RelativeDocumentMoniker": "backend.csproj",
-              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\backend.csproj*",
-              "RelativeToolTip": "backend.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-05T13:38:21.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Configurations\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Configurations\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Configurations\\AppDbContext.cs",
               "RelativeToolTip": "Infrastructure\\Configurations\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vw0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T11:34:57.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T11:34:57.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T13:45:34.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\User.cs",
               "RelativeToolTip": "Core\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T11:34:57.626Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "backend.csproj",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\backend.csproj",
+              "RelativeDocumentMoniker": "backend.csproj",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\backend.csproj",
+              "RelativeToolTip": "backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-05T13:38:21.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T14:20:44.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "global.json",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\global.json",
               "RelativeDocumentMoniker": "global.json",
@@ -178,29 +199,11 @@
               "RelativeToolTip": "global.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-05T13:40:19.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-02-05T13:40:19.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Core\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "Core\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Microsoft.NET.Sdk.DefaultItems.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
@@ -208,8 +211,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "ViewState": "AgIAAHAAAAAAAAAAAAAjwH8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-02-05T14:02:46.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T14:02:46.485Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

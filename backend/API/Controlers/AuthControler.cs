@@ -1,4 +1,5 @@
 ﻿using Application.Services;
+using backend.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -38,8 +39,23 @@ namespace API.Controllers
 
             return Ok("Registration successful.");
         }
-    }
 
+    [HttpPost("savePreferences")]
+        public async Task<IActionResult> SavePreferences([FromBody] UserPreferences request)
+        {
+            var result = await _authService.SavePreferences(request.UserId, request);
+            if (result)
+            {
+                return Ok();
+            }
+            return BadRequest();
+        }
+    }
+    public class SavePreferencesRequest
+    {
+        public int UserId { get; set; }
+        public UserPreferences Preferences { get; set; }
+    }
     public class LoginRequest
     {
         public string Username { get; set; }

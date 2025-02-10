@@ -15,7 +15,7 @@ namespace Application.Services
             _userRepository = userRepository;
         }
 
-        public async Task<User> AuthenticateAsync(string username, string password)
+        public async Task<Users> AuthenticateAsync(string username, string password)
         {
             var user = await _userRepository.GetUserByUsernameAsync(username);
             if (user == null || !VerifyPassword(password, user.PasswordHash))
@@ -34,7 +34,7 @@ namespace Application.Services
             }
 
             var hashedPassword = HashPassword(password);
-            var user = new User
+            var user = new Users
             {
                 Username = username,
                 PasswordHash = hashedPassword,
@@ -42,6 +42,19 @@ namespace Application.Services
             };
 
             await _userRepository.AddUserAsync(user);
+            return true;
+        }
+
+        public async Task<bool> SavePreferences(int userId, UserPreferences preferences)
+        {
+            var user = await _userRepository.GetUserByIdAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            preferences.UserId = userId;
+            await _userRepository.SavePreferencesAsync(preferences);
             return true;
         }
 

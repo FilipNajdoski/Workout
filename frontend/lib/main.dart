@@ -3,13 +3,20 @@ import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
 import 'package:frontend/login%20screens/login_screen.dart';
 import 'package:frontend/login%20screens/register_screen.dart';
 import 'package:frontend/welcome%20screens/welcome_screen.dart';
+import 'package:frontend/utils/theme_manager.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = HttpOverridesImpl();
-  runApp(MyAppWrapper());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ThemeManager(),
+      child: MyAppWrapper(),
+    ),
+  );
 }
 
 // Bypasses security for local backend access during development
@@ -54,29 +61,23 @@ class _MyAppWrapperState extends State<MyAppWrapper> {
         ),
       );
     }
-    return MyApp(isLoggedIn: isLoggedIn!);
-  }
-}
 
-class MyApp extends StatelessWidget {
-  final bool isLoggedIn;
-
-  MyApp({required this.isLoggedIn});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white, // Set background color
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: isLoggedIn ? '/welcome' : '/login',
-      routes: {
-        '/login': (context) => LoginScreen(),
-        '/welcome': (context) => WelcomeScreen(),
-        '/register': (context) => RegisterScreen(),
-        '/dashboard': (context) => DashboardScreen(),
+    return Consumer<ThemeManager>(
+      builder: (context, themeManager, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData.light(),
+          darkTheme: ThemeData.dark(),
+          themeMode: themeManager.themeMode,
+          initialRoute: isLoggedIn! ? '/welcome' : '/login',
+          routes: {
+            '/login': (context) => LoginScreen(),
+            '/welcome': (context) => WelcomeScreen(),
+            '/register': (context) => RegisterScreen(),
+            '/dashboard': (context) =>
+                DashboardScreen(onThemeChanged: themeManager.toggleTheme),
+          },
+        );
       },
     );
   }

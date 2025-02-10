@@ -55,10 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         // Check if userPreferences exist and navigate accordingly
         if (userPreferences != null) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => DashboardScreen()),
-          );
+          Navigator.pushReplacementNamed(context, '/dashboard');
         } else {
           Navigator.pushReplacementNamed(context, '/welcome');
         }

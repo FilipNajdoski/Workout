@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
 import 'package:frontend/login%20screens/login_screen.dart';
 import 'package:frontend/login%20screens/register_screen.dart';
 import 'package:frontend/welcome%20screens/welcome_screen.dart';
@@ -75,6 +76,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/welcome': (context) => WelcomeScreen(),
         '/register': (context) => RegisterScreen(),
+        '/dashboard': (context) => DashboardScreen(),
       },
     );
   }

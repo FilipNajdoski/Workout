@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:api\\controlers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\infrastructure\\configurations\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:infrastructure\\configurations\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|solutionrelative:core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFA6972-8070-42ED-8BD8-A4E04052DA1D}|backend.csproj|c:\\users\\filip\\source\\repos\\workout\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,21 +57,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 546,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-04T14:28:49.707Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -86,25 +73,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-04T14:28:49.707Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserPreferences.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\UserPreferences.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\UserPreferences.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\UserPreferences.cs",
               "RelativeToolTip": "Core\\Entities\\UserPreferences.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAIA9wFIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAIAzwFIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T13:15:08.754Z"
+              "WhenOpened": "2025-02-06T13:15:08.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthControler.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\API\\Controlers\\AuthControler.cs",
               "RelativeDocumentMoniker": "API\\Controlers\\AuthControler.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\API\\Controlers\\AuthControler.cs",
               "RelativeToolTip": "API\\Controlers\\AuthControler.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBgAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T13:46:47.897Z",
               "EditorCaption": ""
@@ -117,14 +118,14 @@
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwCwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T11:34:57.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Infrastructure\\Configurations\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Configurations\\AppDbContext.cs",
@@ -132,44 +133,47 @@
               "RelativeToolTip": "Infrastructure\\Configurations\\AppDbContext.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAD4vw0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.32Z"
+              "WhenOpened": "2025-02-04T11:34:57.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "Core\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.621Z"
+              "WhenOpened": "2025-02-04T11:34:57.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Application\\Services\\AuthService.cs",
               "RelativeToolTip": "Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAwwDkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAD4vxkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T13:45:34.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\Filip\\source\\repos\\Workout\\backend\\Core\\Entities\\User.cs",
               "RelativeToolTip": "Core\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T11:34:57.626Z"
+              "WhenOpened": "2025-02-04T11:34:57.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

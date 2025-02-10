@@ -26,6 +26,14 @@ namespace Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<UserPreferences?> GetUserPreferencesByUserId(int userId)
+        {
+            var existingUserPreference = await _context.UserPreferences.Where(u => u.UserId == userId)
+                                           .FirstOrDefaultAsync();
+
+             return existingUserPreference;
+        }
+
         public async Task SavePreferencesAsync(UserPreferences preferences)
         {
             var existingUserPreference = await _context.UserPreferences.Where(u => u.UserId == preferences.UserId)

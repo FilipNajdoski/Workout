@@ -18,11 +18,12 @@ namespace Application.Services
         public async Task<Users> AuthenticateAsync(string username, string password)
         {
             var user = await _userRepository.GetUserByUsernameAsync(username);
+            var preferences = await _userRepository.GetUserPreferencesByUserId(user.Id);
             if (user == null || !VerifyPassword(password, user.PasswordHash))
             {
                 return null; // Authentication failed
             }
-
+            user.UserPreferences = preferences;
             return user; // Authentication successful
         }
 

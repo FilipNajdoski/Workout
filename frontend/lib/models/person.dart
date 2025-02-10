@@ -1,4 +1,5 @@
 class Person {
+  final int userId;
   final String name;
   final int age;
   final String gender;
@@ -9,14 +10,13 @@ class Person {
   final String goal; // Weight Loss, Muscle Gain, Endurance, General Fitness
   final int workoutDaysPerWeek; // 1-7
   final String preferredWorkoutType; // Cardio, Strength, HIIT, Yoga, Mixed
-  final List<String> availableEquipment; // e.g., ["Dumbbells", "Barbell"]
+  final String availableEquipment; // e.g., ["Dumbbells", "Barbell"]
   final String activityLevel; // Sedentary, Lightly Active, Active, Very Active
-  final List<String> healthConditions; // e.g., ["Knee Pain", "Back Issues"]
-  final List<String>?
-      pastInjuries; // e.g., ["Ankle Sprain", "Shoulder Dislocation"]
+  final String healthConditions; // e.g., ["Knee Pain", "Back Issues"]
+  final String? pastInjuries; // e.g., ["Ankle Sprain", "Shoulder Dislocation"]
   final String? dietaryPreference; // Vegan, Vegetarian, Standard, Keto, etc.
-  final List<String>? workoutExperience; // e.g., ["Weightlifting", "Running"]
-  final List<String> availableWorkoutTimes; // ["Morning", "Evening"]
+  final String? workoutExperience; // e.g., ["Weightlifting", "Running"]
+  final String availableWorkoutTimes; // ["Morning", "Evening"]
   final String motivationLevel; // Low, Moderate, High
   final int averageDailySteps; // Step count for activity tracking
   final int workoutDurationMinutes; // Preferred workout duration
@@ -24,6 +24,7 @@ class Person {
   final String? sleepQuality; // Poor, Average, Good
 
   Person({
+    required this.userId,
     required this.name,
     required this.age,
     required this.gender,
@@ -50,6 +51,7 @@ class Person {
 
   Map<String, dynamic> toJson() {
     return {
+      "userId": userId,
       "name": name,
       "age": age,
       "gender": gender,

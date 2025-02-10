@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -34,7 +36,32 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
-        Navigator.pushReplacementNamed(context, '/welcome');
+
+        int userId = data['id'];
+        String username = data['username'];
+        String role = data['role'];
+        String? userPreferences = data['userPreferences'] != null
+            ? json.encode(data['userPreferences']) // Store as JSON string
+            : null;
+
+        // Store user data in SharedPreferences
+        SharedPreferences prefs = await SharedPreferences.getInstance();
+        await prefs.setInt('userId', userId);
+        await prefs.setString('username', username);
+        await prefs.setString('role', role);
+        if (userPreferences != null) {
+          await prefs.setString('userPreferences', userPreferences);
+        }
+
+        // Check if userPreferences exist and navigate accordingly
+        if (userPreferences != null) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => DashboardScreen()),
+          );
+        } else {
+          Navigator.pushReplacementNamed(context, '/welcome');
+        }
       } else {
         final data = json.decode(response.body);
         setState(() {
@@ -42,6 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
         });
       }
     } catch (error) {
+      print(error);
       setState(() {
         _errorMessage = 'An error occurred. Please try again.';
       });

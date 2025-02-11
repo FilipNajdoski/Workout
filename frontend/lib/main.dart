@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
 import 'package:frontend/login%20screens/login_screen.dart';
 import 'package:frontend/login%20screens/register_screen.dart';
+import 'package:frontend/providers/workout_provider.dart';
 import 'package:frontend/welcome%20screens/welcome_screen.dart';
 import 'package:frontend/utils/theme_manager.dart';
+import 'package:frontend/workouts/workout_screen.dart';
+import 'package:frontend/home screen/home_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
@@ -11,12 +14,16 @@ import 'dart:io';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = HttpOverridesImpl();
-  runApp(
-    ChangeNotifierProvider(
-      create: (context) => ThemeManager(),
-      child: MyAppWrapper(),
-    ),
-  );
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => ThemeManager(),
+        child: MyAppWrapper(),
+      ),
+      ChangeNotifierProvider(create: (context) => WorkoutProvider()),
+    ],
+    child: MyAppWrapper(),
+  ));
 }
 
 // Bypasses security for local backend access during development
@@ -55,10 +62,7 @@ class _MyAppWrapperState extends State<MyAppWrapper> {
   Widget build(BuildContext context) {
     if (isLoggedIn == null) {
       return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: Center(child: CircularProgressIndicator()), // Loading screen
-        ),
+        home: Scaffold(body: Center(child: CircularProgressIndicator())),
       );
     }
 
@@ -69,13 +73,12 @@ class _MyAppWrapperState extends State<MyAppWrapper> {
           theme: ThemeData.light(),
           darkTheme: ThemeData.dark(),
           themeMode: themeManager.themeMode,
-          initialRoute: isLoggedIn! ? '/welcome' : '/login',
+          // Remove initialRoute and set home conditionally
+          home: isLoggedIn! ? HomeScreen() : LoginScreen(),
           routes: {
             '/login': (context) => LoginScreen(),
             '/welcome': (context) => WelcomeScreen(),
             '/register': (context) => RegisterScreen(),
-            '/dashboard': (context) =>
-                DashboardScreen(onThemeChanged: themeManager.toggleTheme),
           },
         );
       },

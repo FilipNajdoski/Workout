@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
+import 'package:frontend/home%20screen/home_screen.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -55,7 +56,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
         // Check if userPreferences exist and navigate accordingly
         if (userPreferences != null) {
-          Navigator.pushReplacementNamed(context, '/dashboard');
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => HomeScreen()),
+          );
         } else {
           Navigator.pushReplacementNamed(context, '/welcome');
         }

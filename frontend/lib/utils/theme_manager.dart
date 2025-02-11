@@ -17,10 +17,11 @@ class ThemeManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  void toggleTheme(bool isDark) async {
-    _themeMode = isDark ? ThemeMode.dark : ThemeMode.light;
+  void toggleTheme() async {
+    _themeMode =
+        _themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('isDarkMode', isDark);
+    await prefs.setBool('isDarkMode', _themeMode == ThemeMode.dark);
     notifyListeners();
   }
 }

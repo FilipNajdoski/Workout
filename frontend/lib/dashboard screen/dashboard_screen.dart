@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:pedometer/pedometer.dart';
 import 'dart:async';
+import 'package:calendar_timeline/calendar_timeline.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -14,6 +15,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int _steps = 0;
   int max_steps = 10000;
   String name = "";
+  int workoutDaysPerWeek = 7;
+  DateTime selectedDate = DateTime.now();
 
   @override
   void initState() {
@@ -32,19 +35,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
       setState(() {
         name = userPreferences['name'] ?? "N/A";
         max_steps = userPreferences['averageDailySteps'] ?? 10000;
+        workoutDaysPerWeek = userPreferences['workoutDaysPerWeek'] ?? 7;
       });
     }
   }
 
   void _initStepCounter() {
     // use this for production (not tested)
-    // Pedometer.stepCountStream.listen((StepCount event) {
-    //   setState(() {
-    //     _steps = event.steps;
-    //   });
-    // }, onError: (error) {
-    //   print("Step Counter Error: $error");
-    // });
+    Pedometer.stepCountStream.listen((StepCount event) {
+       setState(() {
+         _steps = event.steps;
+       });
+     }, onError: (error) {
+       print("Step Counter Error: $error");
+     });
 
     //following code is for testing puroses
     Timer.periodic(Duration(seconds: 1), (timer) {
@@ -73,10 +77,30 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ),
               StepCounterWidget(
                 steps: 1,
-                maxSteps: 7,
-                title: "WOD completed",
+                maxSteps: workoutDaysPerWeek,
+                title: "Workout Days",
               ),
             ],
+          ),
+          SizedBox(height: 30),
+          CalendarTimeline(
+            initialDate: selectedDate,
+            firstDate: DateTime(2023, 1, 1),
+            lastDate: DateTime(2025, 12, 31),
+            onDateSelected: (date) {
+              setState(() {
+                selectedDate = date;
+              });
+              print("Selected date: $date");
+            },
+            leftMargin: 20,
+            monthColor: Colors.blueGrey,
+            dayColor: Colors.teal[200],
+            activeDayColor: Colors.white,
+            activeBackgroundDayColor: Colors.redAccent[100],
+            dotColor: Color(0xFF333A47),
+            selectableDayPredicate: (date) => date.day != 23,
+            locale: 'en',
           ),
         ],
       ),

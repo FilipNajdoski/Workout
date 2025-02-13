@@ -39,7 +39,7 @@ dependencies:
   pedometer: ^4.0.1
   flutter_svg: ^2.0.17
   calendar_timeline: ^1.0.5
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

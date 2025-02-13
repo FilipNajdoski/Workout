@@ -24,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final primaryColor = Colors.lightGreenAccent;
     return Scaffold(
       appBar: AppBar(
         title: Text(_selectedIndex == 0 ? 'Dashboard' : 'Workouts'),
@@ -37,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       : Icons.dark_mode,
                 ),
                 onPressed: () {
-                  themeManager.toggleTheme(); // No argument needed
+                  themeManager.toggleTheme();
                 },
               );
             },
@@ -45,19 +46,53 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: _screens[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.dashboard),
-            label: 'Dashboard',
+      floatingActionButton: FloatingActionButton(
+        mini: true,
+        shape: CircleBorder(),
+        onPressed: () {
+          // No action for now.
+        },
+        child: Image.asset(
+          'assets/icons/dumbell.png',
+          width: 24,
+          height: 24,
+          fit: BoxFit.contain,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(),
+        notchMargin: 8.0,
+        child: Container(
+          height: 60.0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.dashboard,
+                  color: _selectedIndex == 0 ? primaryColor : Colors.grey,
+                ),
+                onPressed: () {
+                  _onItemTapped(0);
+                },
+              ),
+              SizedBox(width: 48.0),
+              IconButton(
+                icon: Image.asset(
+                  'assets/icons/dumbells.png',
+                  width: 24,
+                  height: 24,
+                  fit: BoxFit.contain,
+                  color: _selectedIndex == 1 ? primaryColor : Colors.grey,
+                ),
+                onPressed: () {
+                  _onItemTapped(1);
+                },
+              ),
+            ],
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.directions_walk),
-            label: 'Workouts',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
+        ),
       ),
     );
   }

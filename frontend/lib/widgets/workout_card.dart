@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:frontend/models/workout.dart';
 
 class WorkoutCard extends StatelessWidget {
-  final Workout workout;
+  final Workout? workout;
   final VoidCallback? onMarkAsDone;
 
   const WorkoutCard({
     Key? key,
-    required this.workout,
+    this.workout,
     this.onMarkAsDone,
   }) : super(key: key);
 
@@ -23,8 +23,8 @@ class WorkoutCard extends StatelessWidget {
                 height: 250,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: workout.imageUrl.isNotEmpty
-                        ? NetworkImage(workout.imageUrl) // Load from network
+                    image: workout!.imageUrl.isNotEmpty
+                        ? NetworkImage(workout!.imageUrl) // Load from network
                         : AssetImage('assets/images/image1.jpg')
                             as ImageProvider, // Load from assets
                     fit: BoxFit.cover,
@@ -49,7 +49,7 @@ class WorkoutCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        workout.mainTitle,
+                        workout!.mainTitle,
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -65,14 +65,14 @@ class WorkoutCard extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        "${workout.wodType} - ${workout.wodTime}",
+                        "${workout!.wodType} - ${workout!.wodTime}",
                         style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 14,
                         ),
                       ),
                       const SizedBox(height: 8),
-                      ...workout.movements.map(
+                      ...workout!.movements.map(
                         (movement) => Text(
                           "${movement.reps} ${movement.name} (${movement.weight})",
                           style: const TextStyle(
@@ -96,22 +96,22 @@ class WorkoutCard extends StatelessWidget {
                   children: [
                     const Icon(Icons.favorite, color: Colors.red),
                     const SizedBox(width: 4),
-                    Text(workout.likes.toString()),
+                    Text(workout!.likes.toString()),
                   ],
                 ),
                 Row(
                   children: [
                     const Icon(Icons.comment, color: Colors.grey),
                     const SizedBox(width: 4),
-                    Text(workout.comments.toString()),
+                    Text(workout!.comments.toString()),
                   ],
                 ),
                 IconButton(
                   icon: Icon(
-                    workout.isMarkedAsDone
-                        ? Icons.bookmark
-                        : Icons.bookmark_border,
-                    color: workout.isMarkedAsDone ? Colors.blue : Colors.grey,
+                    workout!.isMarkedAsDone
+                        ? Icons.check_box_outlined
+                        : Icons.check_box_rounded,
+                    color: workout!.isMarkedAsDone ? Colors.grey : Colors.blue,
                   ),
                   onPressed: onMarkAsDone,
                 ),

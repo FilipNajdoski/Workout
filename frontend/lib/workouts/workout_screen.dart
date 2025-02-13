@@ -11,7 +11,7 @@ class WorkoutListScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("WOD's"),
-        automaticallyImplyLeading: true, // This enables the back button
+        automaticallyImplyLeading: true,
       ),
       body: ListView.builder(
         itemCount: workoutProvider.workouts.length,

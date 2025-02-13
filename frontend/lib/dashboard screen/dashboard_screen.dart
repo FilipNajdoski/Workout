@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/providers/workout_provider.dart';
 import 'package:frontend/widgets/step_counter.dart';
+import 'package:frontend/widgets/workout_card.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:pedometer/pedometer.dart';
 import 'dart:async';
 import 'package:calendar_timeline/calendar_timeline.dart';
+import 'package:provider/provider.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -43,12 +46,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
   void _initStepCounter() {
     // use this for production (not tested)
     Pedometer.stepCountStream.listen((StepCount event) {
-       setState(() {
-         _steps = event.steps;
-       });
-     }, onError: (error) {
-       print("Step Counter Error: $error");
-     });
+      setState(() {
+        _steps = event.steps;
+      });
+    }, onError: (error) {
+      print("Step Counter Error: $error");
+    });
 
     //following code is for testing puroses
     Timer.periodic(Duration(seconds: 1), (timer) {
@@ -60,6 +63,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final workoutProvider = Provider.of<WorkoutProvider>(context);
+    final filteredWorkouts = workoutProvider.workouts
+        .where((workout) => workout.dateAssigned == selectedDate)
+        .toList();
+
+    final dailyWorkout =
+        filteredWorkouts.isNotEmpty ? filteredWorkouts.first : null;
+    // Find the index in the original list
+    final workoutIndex = dailyWorkout != null
+        ? workoutProvider.workouts
+            .indexWhere((workout) => workout == dailyWorkout)
+        : -1;
+
     return Center(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -102,6 +118,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
             selectableDayPredicate: (date) => date.day != 23,
             locale: 'en',
           ),
+          dailyWorkout != null
+              ? Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        WorkoutCard(
+                            workout: dailyWorkout,
+                            onMarkAsDone: () {
+                              workoutProvider.toggleMarkAsDone(workoutIndex);
+                            })
+                      ],
+                    ),
+                  ),
+                )
+              : Text("No workout for selected date"),
         ],
       ),
     );

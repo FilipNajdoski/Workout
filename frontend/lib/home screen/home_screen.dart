@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/dashboard%20screen/dashboard_screen.dart';
 import 'package:frontend/utils/theme_manager.dart';
+import 'package:frontend/workouts/create_screen.dart';
 import 'package:frontend/workouts/workout_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -50,7 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
         mini: true,
         shape: CircleBorder(),
         onPressed: () {
-          // No action for now.
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => CreateScreen()),
+          );
         },
         child: Image.asset(
           'assets/icons/dumbell.png',

@@ -22,7 +22,7 @@ namespace Application.Services
             {
                 return null; // Authentication failed
             }
-            var preferences = await _userRepository.GetUserPreferencesByUserId(user.Id);
+            var preferences = await _userRepository.GetUserPreferencesByUserIdAsync(user.Id);
             user.UserPreferences = preferences;
             return user; // Authentication successful
         }

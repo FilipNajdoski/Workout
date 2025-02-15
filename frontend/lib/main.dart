@@ -5,6 +5,7 @@ import 'package:frontend/login%20screens/register_screen.dart';
 import 'package:frontend/providers/workout_provider.dart';
 import 'package:frontend/welcome%20screens/welcome_screen.dart';
 import 'package:frontend/utils/theme_manager.dart';
+import 'package:frontend/workouts/create_screen.dart';
 import 'package:frontend/workouts/workout_screen.dart';
 import 'package:frontend/home screen/home_screen.dart';
 import 'package:provider/provider.dart';
@@ -14,6 +15,7 @@ import 'dart:io';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = HttpOverridesImpl();
+
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(

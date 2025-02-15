@@ -6,13 +6,14 @@ namespace Infrastructure.Configurations
     public class AppDbContext : DbContext
     {
         private readonly ILoggerFactory _loggerFactory;
-        public AppDbContext(DbContextOptions<AppDbContext> options, ILoggerFactory loggerFactory) : base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options, ILoggerFactory loggerFactory) : base(options)
         {
             _loggerFactory = loggerFactory;
         }
 
         public DbSet<Users> Users { get; set; }
         public DbSet<UserPreferences> UserPreferences { get; set; }
+        public DbSet<Movement> Movements { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,11 +36,18 @@ namespace Infrastructure.Configurations
             modelBuilder.Entity<UserPreferences>().Property(up => up.MotivationLevel).IsRequired().HasMaxLength(50);
 
             modelBuilder.Entity<Users>()
-            .HasOne(u => u.UserPreferences)
-            .WithOne(up => up.User)
-            .HasForeignKey<UserPreferences>(up => up.UserId)
-            .OnDelete(DeleteBehavior.Cascade); // Or `Restrict` depending on your needs
+                .HasOne(u => u.UserPreferences)
+                .WithOne(up => up.User)
+                .HasForeignKey<UserPreferences>(up => up.UserId)
+                .OnDelete(DeleteBehavior.Cascade); // Or `Restrict` depending on your needs
+
+            // Define Movement entity
+            modelBuilder.Entity<Movement>().HasKey(m => m.Id);
+            modelBuilder.Entity<Movement>().Property(m => m.Reps).IsRequired();
+            modelBuilder.Entity<Movement>().Property(m => m.Name).IsRequired().HasMaxLength(100);
+            modelBuilder.Entity<Movement>().Property(m => m.Weight).IsRequired().HasMaxLength(50);
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLoggerFactory(_loggerFactory); // Enables logging

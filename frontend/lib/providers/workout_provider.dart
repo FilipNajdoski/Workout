@@ -16,7 +16,7 @@ class WorkoutProvider with ChangeNotifier {
         ],
         likes: 129,
         comments: 24,
-        dateAssigned: DateTime(2025, 02, 14)),
+        dateAssigned: DateTime.now().add(const Duration(days: 1))),
     Workout(
       mainTitle: "2021 CrossFit Games Open",
       group: "Advanced",
@@ -29,7 +29,7 @@ class WorkoutProvider with ChangeNotifier {
       ],
       likes: 89,
       comments: 12,
-      dateAssigned: DateTime(2025, 02, 15),
+      dateAssigned: DateTime(2025, 03, 5),
     ),
     Workout(
       mainTitle: "2013 CrossFit Games Open",

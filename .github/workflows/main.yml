@@ -13,8 +13,8 @@ jobs:
 
       - name: Log in to Docker Hub
         run: |
-          echo "${{ secrets.DOCKER_HUB_USERNAME }}"
-          echo "${{ secrets.DOCKER_HUB_PASSWORD }}"
+          echo "${{ secrets.DOCKER_HUB_USERNAME }}" | base64
+          echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | base64
 
       - name: Build & Push Docker Image
         run: |
